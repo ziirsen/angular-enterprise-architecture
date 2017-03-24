@@ -1,6 +1,6 @@
 # Angular Enterprise Architecture
 
-* Runtime dependency injection with AngularJs, RequireJS and the PCI pattern *
+_Runtime dependency injection with AngularJs, RequireJS and the PCI pattern_
 
 > This project aims to illustrate how to make runtime dependency injection with AngularJs and RequireJs. Core files is bundled with .NET Bundle Config, but could very well be done with other tools. The rest of the application is minified with GulpJs and injected at runtime with RequireJs.
 
