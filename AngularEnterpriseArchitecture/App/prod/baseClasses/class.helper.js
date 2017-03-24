@@ -1,0 +1,1 @@
+"use strict";!function(t){t.service("ClassHelper",[function(){this.Inherit=function(t,e){var o=Object(e.prototype);o.constructor=t,t.prototype=o}}])}(app.lazy);

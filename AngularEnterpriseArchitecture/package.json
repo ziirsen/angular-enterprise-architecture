@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-minify": "~0.0.15",
+    "gulp-clean": "~0.3.2",
+    "gulp-replace": "~0.5.4",
+    "gulp-copy": "~1.0.0"
+  }
+}
