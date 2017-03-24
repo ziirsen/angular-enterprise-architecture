@@ -50,7 +50,7 @@ namespace AngularEnterpriseArchitecture
                       "~/App/" + _appSourcePath + "/app.js",
                       "~/App/" + _appSourcePath + "/pages/dashboard/module.config.js",
                       "~/App/" + _appSourcePath + "/pages/contact/module.config.js",
-                      "~/App/" + _appSourcePath + "/pages/chart/module.config.js"
+                      "~/App/" + _appSourcePath + "/pages/charts/module.config.js"
                       ));
         }
     }

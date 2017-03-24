@@ -5,8 +5,8 @@
         .config(['$routeProvider', function ($routeProvider) {
 
             $routeProvider
-                .when('/chart', {
-                    templateUrl: _global.paths.pages + '/chart/page.chart.html?v=' + _global.appVersion,
+                .when('/charts', {
+                    templateUrl: _global.paths.pages + '/charts/page.chart.html?v=' + _global.appVersion,
                     resolve: {
                         load: ['$q', function ($q) {
                             var def = $q.defer();
@@ -16,11 +16,11 @@
                                 'BaseClasses/baseClass.chart',
                                 'Services/service.data',
                                 'Components/headline/directive.headline',
-                                'Components/chart/directive.chart'
+                                'Components/miniChart/directive.miniChart'
                             ],
                             function () {
                                 // Dependency inject the page controller
-                                require(['Pages/chart/controller.chart'], function () {
+                                require(['Pages/charts/controller.chart'], function () {
                                     def.resolve();
                                 });
                             });

@@ -230,12 +230,12 @@
     <Content Include="App\dev\baseClasses\class.helper.js" />
     <Content Include="App\dev\baseClasses\baseClass.chart.js" />
     <Content Include="App\dev\baseClasses\main.js" />
-    <Content Include="App\dev\components\chart\directive.chart.js" />
-    <Content Include="App\dev\components\chart\partial.chart.html" />
+    <Content Include="App\dev\components\miniChart\directive.miniChart.js" />
+    <Content Include="App\dev\components\miniChart\partial.miniChart.html" />
     <Content Include="App\dev\libs\highcharts.js" />
-    <Content Include="App\dev\pages\chart\controller.chart.js" />
-    <Content Include="App\dev\pages\chart\module.config.js" />
-    <Content Include="App\dev\pages\chart\page.chart.html" />
+    <Content Include="App\dev\pages\charts\controller.chart.js" />
+    <Content Include="App\dev\pages\charts\module.config.js" />
+    <Content Include="App\dev\pages\charts\page.chart.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Content\bootstrap.css" />
