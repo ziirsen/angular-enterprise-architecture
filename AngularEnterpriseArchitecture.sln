@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularEnterpriseArchitectu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEA.LoadTester", "AEA.LoadTester\AEA.LoadTester.csproj", "{9CF659B1-C187-482F-BD27-C74BC2630EB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AEA.EndToEndTesting", "AEA.EndToEndTesting\AEA.EndToEndTesting.csproj", "{B00D59A2-C521-4971-A3C0-4D93C3881CB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9CF659B1-C187-482F-BD27-C74BC2630EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF659B1-C187-482F-BD27-C74BC2630EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF659B1-C187-482F-BD27-C74BC2630EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00D59A2-C521-4971-A3C0-4D93C3881CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00D59A2-C521-4971-A3C0-4D93C3881CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00D59A2-C521-4971-A3C0-4D93C3881CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00D59A2-C521-4971-A3C0-4D93C3881CB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
