@@ -15,26 +15,26 @@ var _global = {
 /*
     Configure requireJs
 ----------------------------------------*/
-(function (req) {
-    req.config({
-        urlArgs: 'v=' + _global.appVersion,
-        baseUrl: '/App/dev',
-        paths: {
-            BaseClasses: _global.paths.baseClasses,
-            Components: _global.paths.components,
-            Pages: _global.paths.pages,
-            Libs: _global.paths.libs,
-            Services: _global.paths.services,
-        },
-        //packages: ['baseClasses'],
-        waitSeconds: 0
-    });
+//(function (req) {
+//    req.config({
+//        urlArgs: 'v=' + _global.appVersion,
+//        baseUrl: '/App/dev',
+//        paths: {
+//            BaseClasses: _global.paths.baseClasses,
+//            Components: _global.paths.components,
+//            Pages: _global.paths.pages,
+//            Libs: _global.paths.libs,
+//            Services: _global.paths.services,
+//        },
+//        //packages: ['baseClasses'],
+//        waitSeconds: 0
+//    });
 
-    // Load all base class's
-    //require(['baseClasses']);
-    require(['BaseClasses/class.helper']);
+//    // Load all base class's
+//    //require(['baseClasses']);
+//    require(['BaseClasses/class.helper']);
 
-})(requirejs);
+//})(requirejs);
 
 /*
     Configure angularJs
@@ -56,14 +56,14 @@ var app = angular.module('enterpriseApp', [
 
             $locationProvider.html5Mode(true);
 
-            ag.lazy = {
-                controller: $controllerProvider.register,
-                directive: $compileProvider.directive,
-                filter: $filterProvider.register,
-                factory: $provide.factory,
-                service: $provide.service,
-                //animation: $animationProvider.register
-            };
+            //ag.lazy = {
+            //    controller: $controllerProvider.register,
+            //    directive: $compileProvider.directive,
+            //    filter: $filterProvider.register,
+            //    factory: $provide.factory,
+            //    service: $provide.service,
+            //    //animation: $animationProvider.register
+            //};
 
             // Fallback route
             $routeProvider

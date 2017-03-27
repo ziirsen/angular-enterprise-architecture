@@ -6,7 +6,7 @@
         /*  
             Dependency inject third-party libs
         */
-        require(['Libs/highcharts']);
+        //require(['Libs/highcharts']);
 
         /*  
             Class implementation
@@ -69,4 +69,4 @@
             }
         }
     }]);
-})(app.lazy);
+})(app);

@@ -13,9 +13,9 @@ namespace AngularEnterpriseArchitecture
         public static void RegisterBundles(BundleCollection bundles)
         {
             // Re-define variables based on build configuration
-            #if !DEBUG
-                    _appSourcePath = "prod";
-            #endif
+            //#if !DEBUG
+            //        _appSourcePath = "prod";
+            //#endif
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                 "~/Scripts/jquery-{version}.js"));
@@ -42,16 +42,18 @@ namespace AngularEnterpriseArchitecture
                    "~/Scripts/angular.js",
                    "~/Scripts/angular-route.js",
                    "~/Scripts/angular-cache.js",
+                   "~/Scripts/require.js")
+                   .IncludeDirectory("~/App/dev", "*.js", true);
 
-                   "~/Scripts/require.js");
+            bundles.Add(coreBundle);
 
             // Application sub-modules
-            bundles.Add(coreBundle.Include(
-                      "~/App/" + _appSourcePath + "/app.js",
-                      "~/App/" + _appSourcePath + "/pages/dashboard/module.config.js",
-                      "~/App/" + _appSourcePath + "/pages/contact/module.config.js",
-                      "~/App/" + _appSourcePath + "/pages/charts/module.config.js"
-                      ));
+            //bundles.Add(coreBundle.Include(
+            //          "~/App/" + _appSourcePath + "/app.js",
+            //          "~/App/" + _appSourcePath + "/pages/dashboard/module.config.js",
+            //          "~/App/" + _appSourcePath + "/pages/contact/module.config.js",
+            //          "~/App/" + _appSourcePath + "/pages/charts/module.config.js"
+            //          ));
         }
     }
 }

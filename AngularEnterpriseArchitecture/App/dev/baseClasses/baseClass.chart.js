@@ -48,4 +48,4 @@
         this.Base = Chart;
 
     }]);
-})(app.lazy);
+})(app);

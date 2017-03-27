@@ -6,4 +6,4 @@
         // page logic goes here
 
     }]);
-})(app.lazy);
+})(app);

@@ -16,4 +16,4 @@
             $scope.$broadcast('onSetTitle', { id: id, title: 'Event by id: ' + id });
         };
     }]);
-})(app.lazy);
+})(app);
