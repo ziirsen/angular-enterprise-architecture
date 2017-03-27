@@ -25,7 +25,11 @@ namespace AEA.LoadTester
 
                 if(linesInA != linesInB)
                 {
-                    warningLbl1.Text = "Status: Line count dosnt match...";
+                    if (linesInA > linesInB)
+                        warningLbl1.Text = "Site A has more lines";
+
+                    if (linesInA < linesInB)
+                        warningLbl1.Text = "Site B has more lines";
                 }
 
                 var modelA = GetCompareDataFromLog(parsedFileA, "Site A");
@@ -54,7 +58,7 @@ namespace AEA.LoadTester
                 int oneProcentage = modelA.BytesRecevied / 100;
                 int saved = diff / oneProcentage;
 
-                lblResultBytesReceived.Text = "Bytes recevied: " + saved + "% less";
+                lblResultBytesReceived.Text = "Bytes recevied: " + saved + "% less (B)";
             }
             else if (modelA.BytesRecevied < modelB.BytesRecevied)
             {
@@ -62,7 +66,7 @@ namespace AEA.LoadTester
                 int oneProcentage = modelA.BytesRecevied / 100;
                 int saved = diff / oneProcentage;
 
-                lblResultBytesReceived.Text = "Bytes recevied: " + saved + "% increase";
+                lblResultBytesReceived.Text = "Bytes recevied: " + saved + "% increase (B)";
             }
             else
             {
@@ -76,7 +80,7 @@ namespace AEA.LoadTester
                 int oneProcentage = modelA.BytesSent / 100;
                 int saved = diff / oneProcentage;
 
-                lblResultBytesSent.Text = "Bytes sent: " + saved + "% less";
+                lblResultBytesSent.Text = "Bytes sent: " + saved + "% less (B)";
             }
             else if (modelA.BytesSent < modelB.BytesSent)
             {
@@ -84,7 +88,7 @@ namespace AEA.LoadTester
                 int oneProcentage = modelA.BytesSent / 100;
                 int saved = diff / oneProcentage;
 
-                lblResultBytesSent.Text = "Bytes sent: " + saved + "% increase";
+                lblResultBytesSent.Text = "Bytes sent: " + saved + "% increase (B)";
             }
             else
             {
@@ -98,7 +102,7 @@ namespace AEA.LoadTester
                 int oneProcentage = modelA.TimeTaken / 100;
                 int saved = diff / oneProcentage;
 
-                lblResultTimeTaken.Text = "Time taken: " + saved + "% less";
+                lblResultTimeTaken.Text = "Time taken: " + saved + "% less (B)";
                 lblResultWinner.Text = "Winner: " + modelB.LogName;
             }
             else if (modelA.TimeTaken < modelB.TimeTaken)
@@ -107,7 +111,7 @@ namespace AEA.LoadTester
                 int oneProcentage = modelA.TimeTaken / 100;
                 int saved = diff / oneProcentage;
 
-                lblResultTimeTaken.Text = "Time taken: " + saved + "% increase";
+                lblResultTimeTaken.Text = "Time taken: " + saved + "% increase (B)";
                 lblResultWinner.Text = "Winner: " + modelA.LogName;
             }
             else
