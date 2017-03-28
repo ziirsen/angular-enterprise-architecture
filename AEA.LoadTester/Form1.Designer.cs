@@ -35,18 +35,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.warningLbl1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblSiteABytesSent = new System.Windows.Forms.Label();
-            this.lblSiteABytesReceived = new System.Windows.Forms.Label();
             this.lblSiteATimeTaken = new System.Windows.Forms.Label();
+            this.lblSiteABytesReceived = new System.Windows.Forms.Label();
+            this.lblSiteABytesSent = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lblSiteBTimeTaken = new System.Windows.Forms.Label();
             this.lblSiteBBytesReceived = new System.Windows.Forms.Label();
             this.lblSiteBBytesSent = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblResultWinner = new System.Windows.Forms.Label();
             this.lblResultTimeTaken = new System.Windows.Forms.Label();
             this.lblResultBytesReceived = new System.Windows.Forms.Label();
             this.lblResultBytesSent = new System.Windows.Forms.Label();
-            this.lblResultWinner = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -131,26 +131,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Site A";
             // 
-            // lblSiteABytesSent
-            // 
-            this.lblSiteABytesSent.AutoSize = true;
-            this.lblSiteABytesSent.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSiteABytesSent.Location = new System.Drawing.Point(16, 31);
-            this.lblSiteABytesSent.Name = "lblSiteABytesSent";
-            this.lblSiteABytesSent.Size = new System.Drawing.Size(70, 17);
-            this.lblSiteABytesSent.TabIndex = 8;
-            this.lblSiteABytesSent.Text = "Bytes sent:";
-            // 
-            // lblSiteABytesReceived
-            // 
-            this.lblSiteABytesReceived.AutoSize = true;
-            this.lblSiteABytesReceived.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSiteABytesReceived.Location = new System.Drawing.Point(16, 58);
-            this.lblSiteABytesReceived.Name = "lblSiteABytesReceived";
-            this.lblSiteABytesReceived.Size = new System.Drawing.Size(94, 17);
-            this.lblSiteABytesReceived.TabIndex = 9;
-            this.lblSiteABytesReceived.Text = "Bytes recevied:";
-            // 
             // lblSiteATimeTaken
             // 
             this.lblSiteATimeTaken.AutoSize = true;
@@ -160,6 +140,26 @@
             this.lblSiteATimeTaken.Size = new System.Drawing.Size(75, 17);
             this.lblSiteATimeTaken.TabIndex = 10;
             this.lblSiteATimeTaken.Text = "Time taken:";
+            // 
+            // lblSiteABytesReceived
+            // 
+            this.lblSiteABytesReceived.AutoSize = true;
+            this.lblSiteABytesReceived.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSiteABytesReceived.Location = new System.Drawing.Point(19, 30);
+            this.lblSiteABytesReceived.Name = "lblSiteABytesReceived";
+            this.lblSiteABytesReceived.Size = new System.Drawing.Size(94, 17);
+            this.lblSiteABytesReceived.TabIndex = 9;
+            this.lblSiteABytesReceived.Text = "Bytes recevied:";
+            // 
+            // lblSiteABytesSent
+            // 
+            this.lblSiteABytesSent.AutoSize = true;
+            this.lblSiteABytesSent.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSiteABytesSent.Location = new System.Drawing.Point(19, 58);
+            this.lblSiteABytesSent.Name = "lblSiteABytesSent";
+            this.lblSiteABytesSent.Size = new System.Drawing.Size(70, 17);
+            this.lblSiteABytesSent.TabIndex = 8;
+            this.lblSiteABytesSent.Text = "Bytes sent:";
             // 
             // groupBox4
             // 
@@ -188,7 +188,7 @@
             // 
             this.lblSiteBBytesReceived.AutoSize = true;
             this.lblSiteBBytesReceived.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSiteBBytesReceived.Location = new System.Drawing.Point(16, 58);
+            this.lblSiteBBytesReceived.Location = new System.Drawing.Point(16, 30);
             this.lblSiteBBytesReceived.Name = "lblSiteBBytesReceived";
             this.lblSiteBBytesReceived.Size = new System.Drawing.Size(94, 17);
             this.lblSiteBBytesReceived.TabIndex = 9;
@@ -198,7 +198,7 @@
             // 
             this.lblSiteBBytesSent.AutoSize = true;
             this.lblSiteBBytesSent.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSiteBBytesSent.Location = new System.Drawing.Point(16, 31);
+            this.lblSiteBBytesSent.Location = new System.Drawing.Point(16, 57);
             this.lblSiteBBytesSent.Name = "lblSiteBBytesSent";
             this.lblSiteBBytesSent.Size = new System.Drawing.Size(70, 17);
             this.lblSiteBBytesSent.TabIndex = 8;
@@ -218,6 +218,16 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Compare result";
             // 
+            // lblResultWinner
+            // 
+            this.lblResultWinner.AutoSize = true;
+            this.lblResultWinner.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultWinner.Location = new System.Drawing.Point(16, 30);
+            this.lblResultWinner.Name = "lblResultWinner";
+            this.lblResultWinner.Size = new System.Drawing.Size(53, 17);
+            this.lblResultWinner.TabIndex = 11;
+            this.lblResultWinner.Text = "Winner:";
+            // 
             // lblResultTimeTaken
             // 
             this.lblResultTimeTaken.AutoSize = true;
@@ -232,7 +242,7 @@
             // 
             this.lblResultBytesReceived.AutoSize = true;
             this.lblResultBytesReceived.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultBytesReceived.Location = new System.Drawing.Point(16, 83);
+            this.lblResultBytesReceived.Location = new System.Drawing.Point(16, 57);
             this.lblResultBytesReceived.Name = "lblResultBytesReceived";
             this.lblResultBytesReceived.Size = new System.Drawing.Size(94, 17);
             this.lblResultBytesReceived.TabIndex = 9;
@@ -242,21 +252,11 @@
             // 
             this.lblResultBytesSent.AutoSize = true;
             this.lblResultBytesSent.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultBytesSent.Location = new System.Drawing.Point(16, 56);
+            this.lblResultBytesSent.Location = new System.Drawing.Point(17, 84);
             this.lblResultBytesSent.Name = "lblResultBytesSent";
             this.lblResultBytesSent.Size = new System.Drawing.Size(70, 17);
             this.lblResultBytesSent.TabIndex = 8;
             this.lblResultBytesSent.Text = "Bytes sent:";
-            // 
-            // lblResultWinner
-            // 
-            this.lblResultWinner.AutoSize = true;
-            this.lblResultWinner.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultWinner.Location = new System.Drawing.Point(16, 30);
-            this.lblResultWinner.Name = "lblResultWinner";
-            this.lblResultWinner.Size = new System.Drawing.Size(53, 17);
-            this.lblResultWinner.TabIndex = 11;
-            this.lblResultWinner.Text = "Winner:";
             // 
             // Form1
             // 

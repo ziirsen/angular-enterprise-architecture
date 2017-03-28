@@ -96,7 +96,8 @@
     <Content Include="Selenium\MicrosoftWebDriver.exe" />
     <Content Include="Selenium\selenium-server-standalone-3.3.1.jar" />
     <Content Include="Web.config" />
-    <Content Include="_Tests\test.js" />
+    <Content Include="_Tests\test-avgUsage.js" />
+    <Content Include="_Tests\test-fullUsage.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
