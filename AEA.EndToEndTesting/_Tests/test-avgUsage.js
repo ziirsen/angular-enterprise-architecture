@@ -1,4 +1,4 @@
-﻿var _siteUrl = 'http://site-a.local/';
+﻿var _siteUrl = 'http://load-test-b.crator.dk/';
 
 function runTestFullUsage(_browser) {
     return _browser
@@ -67,9 +67,9 @@ function runTestPrimaryUsage(_browser) {
 }
 
 var tests = {},
-    amountFullLoad = 2,
-    amountNormalLoad = 5,
-    amountMinimalLoad = 8;
+    amountFullLoad = 200,
+    amountNormalLoad = 500,
+    amountMinimalLoad = 300;
 
 // Create tests
 for (var i = 0, len = amountFullLoad; i < len; i++) {

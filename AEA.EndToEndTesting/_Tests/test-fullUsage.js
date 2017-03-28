@@ -1,4 +1,4 @@
-﻿var _siteUrl = 'http://site-b.local/';
+﻿var _siteUrl = 'http://load-test-a.crator.dk/';
 
 function runTest(_browser) {
     return _browser
@@ -28,7 +28,7 @@ function runTest(_browser) {
 }
 
 var tests = {},
-    amount = 5;
+    amount = 1000;
 
 // Create tests
 for (var i = 0, len = amount; i < len; i++) {
