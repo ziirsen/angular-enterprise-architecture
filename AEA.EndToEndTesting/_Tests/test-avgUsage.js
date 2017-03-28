@@ -66,90 +66,32 @@ function runTestPrimaryUsage(_browser) {
          .assert.containsText('h1', 'Contact us today')
 }
 
-module.exports = {
-    // Full load
-    'Load-test: Runtime inject application - User 1': function (browser) {
-        runTestFullUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 2': function (browser) {
-        runTestFullUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 3': function (browser) {
-        runTestFullUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 4': function (browser) {
-        runTestFullUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 5': function (browser) {
-        runTestFullUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 6': function (browser) {
-        runTestFullUsage(browser)
-          .end();
-    },
+var tests = {},
+    amountFullLoad = 2,
+    amountNormalLoad = 5,
+    amountMinimalLoad = 8;
 
-    // Primary
-    'Load-test: Runtime inject application - User 7': function (browser) {
-        runTestPrimaryUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 8': function (browser) {
-        runTestPrimaryUsage(browser)
-          .end();
-    },    
-    'Load-test: Runtime inject application - User 9': function (browser) {
-        runTestPrimaryUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 10': function (browser) {
-        runTestPrimaryUsage(browser)
-          .end();
-    },
-
-    // Minimal
-    'Load-test: Runtime inject application - User 11': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 12': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 13': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 14': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 15': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 16': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 17': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 18': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 19': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
-    },
-    'Load-test: Runtime inject application - User 20': function (browser) {
-        runTestMinimalUsage(browser)
-          .end();
+// Create tests
+for (var i = 0, len = amountFullLoad; i < len; i++) {
+    tests['Load-test: Runtime inject full - User ' + (i + 1)] = function (browser) {
+        runTestFullUsage(browser)
+            .end();
     }
-};
+}
+
+for (var i = 0, len = amountNormalLoad; i < len; i++) {
+    tests['Load-test: Runtime inject normal - User ' + (i + 1)] = function (browser) {
+        runTestPrimaryUsage(browser)
+            .end();
+    }
+}
+
+for (var i = 0, len = amountMinimalLoad; i < len; i++) {
+    tests['Load-test: Runtime inject minimal - User ' + (i + 1)] = function (browser) {
+        runTestMinimalUsage(browser)
+            .end();
+    }
+}
+
+// Apply tests
+module.exports = tests;

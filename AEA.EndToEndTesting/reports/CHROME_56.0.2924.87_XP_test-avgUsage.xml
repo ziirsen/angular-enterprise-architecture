@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="20">
+            tests="15">
 
   <testsuite name="test-avgUsage"
     errors="0" failures="0" hostname="" id="" package="test-avgUsage" skipped="0"
-    tests="20" time="145.2" timestamp="Tue, 28 Mar 2017 10:14:19 GMT">
+    tests="15" time="100.7" timestamp="Tue, 28 Mar 2017 10:50:37 GMT">
   
-    <testcase name="Load-test: Runtime inject application 30 times - 1" classname="test-avgUsage" time="10.52" assertions="6">
+    <testcase name="Load-test: Runtime inject full - User 1" classname="test-avgUsage" time="9.198" assertions="6">
 
     
 
@@ -22,7 +22,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 2" classname="test-avgUsage" time="9.006" assertions="6">
+    <testcase name="Load-test: Runtime inject full - User 2" classname="test-avgUsage" time="8.331" assertions="6">
 
     
 
@@ -37,24 +37,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 3" classname="test-avgUsage" time="9.395" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Load-test: Runtime inject application 30 times - 4" classname="test-avgUsage" time="8.480" assertions="6">
-
-    
+    <testcase name="Load-test: Runtime inject normal - User 1" classname="test-avgUsage" time="7.178" assertions="5">
 
     
 
@@ -67,24 +50,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 5" classname="test-avgUsage" time="8.605" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Load-test: Runtime inject application 30 times - 6" classname="test-avgUsage" time="9.017" assertions="6">
-
-    
+    <testcase name="Load-test: Runtime inject normal - User 2" classname="test-avgUsage" time="7.129" assertions="5">
 
     
 
@@ -97,24 +63,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 7" classname="test-avgUsage" time="8.963" assertions="6">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Load-test: Runtime inject application 30 times - 8" classname="test-avgUsage" time="8.937" assertions="6">
-
-    
+    <testcase name="Load-test: Runtime inject normal - User 3" classname="test-avgUsage" time="7.260" assertions="5">
 
     
 
@@ -127,18 +76,9 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 9" classname="test-avgUsage" time="6.349" assertions="4">
+    <testcase name="Load-test: Runtime inject normal - User 4" classname="test-avgUsage" time="7.080" assertions="5">
 
     
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Load-test: Runtime inject application 30 times - 10" classname="test-avgUsage" time="5.877" assertions="4">
 
     
 
@@ -149,18 +89,9 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 11" classname="test-avgUsage" time="6.018" assertions="4">
+    <testcase name="Load-test: Runtime inject normal - User 5" classname="test-avgUsage" time="7.117" assertions="5">
 
     
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Load-test: Runtime inject application 30 times - 12" classname="test-avgUsage" time="6.022" assertions="4">
 
     
 
@@ -171,7 +102,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 13" classname="test-avgUsage" time="6.058" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 1" classname="test-avgUsage" time="5.921" assertions="4">
 
     
 
@@ -182,7 +113,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 14" classname="test-avgUsage" time="6.045" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 2" classname="test-avgUsage" time="5.868" assertions="4">
 
     
 
@@ -193,7 +124,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 15" classname="test-avgUsage" time="5.944" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 3" classname="test-avgUsage" time="5.920" assertions="4">
 
     
 
@@ -204,7 +135,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 16" classname="test-avgUsage" time="5.878" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 4" classname="test-avgUsage" time="5.885" assertions="4">
 
     
 
@@ -215,7 +146,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 17" classname="test-avgUsage" time="5.827" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 5" classname="test-avgUsage" time="5.964" assertions="4">
 
     
 
@@ -226,7 +157,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 18" classname="test-avgUsage" time="5.953" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 6" classname="test-avgUsage" time="5.965" assertions="4">
 
     
 
@@ -237,7 +168,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 19" classname="test-avgUsage" time="6.325" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 7" classname="test-avgUsage" time="5.927" assertions="4">
 
     
 
@@ -248,7 +179,7 @@
     
     </testcase>
   
-    <testcase name="Load-test: Runtime inject application 30 times - 20" classname="test-avgUsage" time="5.958" assertions="4">
+    <testcase name="Load-test: Runtime inject minimal - User 8" classname="test-avgUsage" time="5.915" assertions="4">
 
     
 
