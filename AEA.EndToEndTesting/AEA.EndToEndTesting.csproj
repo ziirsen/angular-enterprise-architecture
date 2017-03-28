@@ -90,8 +90,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Scripts\runner.js" />
+    <Content Include="nightwatch.conf.js" />
+    <Content Include="Selenium\chromedriver.exe" />
+    <Content Include="Selenium\geckodriver.exe" />
+    <Content Include="Selenium\MicrosoftWebDriver.exe" />
+    <Content Include="Selenium\selenium-server-standalone-3.3.1.jar" />
     <Content Include="Web.config" />
+    <Content Include="_Tests\test.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -101,10 +106,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
-    <Content Include="Scripts\nightwatch.json" />
+    <Content Include="nightwatch.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,11 +116,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
