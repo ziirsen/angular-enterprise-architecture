@@ -67,6 +67,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Logs\Test-2\remote-site-a.log" />
+    <None Include="Logs\Test-2\remote-site-b.log" />
     <None Include="Logs\Test-1\siteA-DI.log" />
     <None Include="Logs\Test-1\siteB-bundeld.log" />
     <None Include="Properties\Settings.settings">
